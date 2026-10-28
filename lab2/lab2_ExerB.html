@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Course Feedback</title>
+	</head>
+
+	<body>
+
+		<header>
+			<h1>CSF3133 Course Feedback</h1>
+		</header>
+
+		<nav>
+			<a href="#result">Results</a> |
+			<a href="#form">Feedback Form</a> |
+			<a href="#comments">Student Comments</a>
+		</nav>
+
+		<section id="result">
+			<h2>Feedback Summary</h2>
+
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Week</th>
+						<th>Topic</th>
+						<th>Rating</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Introduction to HTML</td>
+						<td>4.5</td>
+					</tr>
+
+					<tr>
+						<td>2</td>
+						<td>Tables and Forms</td>
+						<td>4.0</td>
+					</tr>
+
+					<tr>
+						<td>3</td>
+						<td>Semantic HTML</td>
+						<td>4.0</td>
+					</tr>
+
+					<tr>
+						<td>4</td>
+						<td rowspan="2">Mini Project</td>
+						<td>4.5</td>
+					</tr>
+
+					<tr>
+						<td>5</td>
+						<td>5.0</td>
+					</tr>
+
+					<tr>
+						<td colspan="2">Average Rating</td>
+						<td>4.4</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section id="form">
+			<h2>Give Your Feedback</h2>
+
+			<form action="#" method="post">
+
+				<label for="fullname">Name:</label>
+				<input type="text" id="fullname" name="fullname" required>
+				<br><br>
+
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email" required>
+				<br><br>
+
+				<p>Overall Rating:</p>
+
+				<input type="radio" id="good" name="rating" value="Good" required>
+				<label for="good">Good</label>
+				<br>
+
+				<input type="radio" id="average" name="rating" value="Average">
+				<label for="average">Average</label>
+				<br>
+
+				<input type="radio" id="poor" name="rating" value="Poor">
+				<label for="poor">Poor</label>
+				<br><br>
+
+				<input type="checkbox" id="lab" name="lab" value="Yes">
+				<label for="lab">I attended all labs</label>
+				<br><br>
+
+
+				<p>Topics I want more practice on:</p>
+
+				<input type="checkbox" id="html" name="topics" value="HTML Basics">
+				<label for="html">HTML Basics</label>
+				<br>
+
+				<input type="checkbox" id="tables" name="topics" value="Tables and Forms">
+				<label for="tables">Tables and Forms</label>
+				<br>
+
+				<input type="checkbox" id="semantic" name="topics" value="Semantic HTML">
+				<label for="semantic">Semantic HTML</label>
+				<br><br>
+
+				<label for="group">Section/Group:</label>
+
+				<select id="group" name="group" required>
+					<option value="">-- Select Your Group --</option>
+					<option value="Group A">Group A</option>
+					<option value="Group B">Group B</option>
+					<option value="Group C">Group C</option>
+				</select>
+
+				<br><br>
+
+				<input type="submit" value="Submit">
+
+			</form>
+		</section>
+
+		<section id="comments">
+			<h2>Student Comments</h2>
+
+			<article>
+				<h3>Ali</h3>
+				<p>
+					The HTML lessons are interesting and easy to understand.
+					I would like more practical exercises.
+				</p>
+			</article>
+
+			<article>
+				<h3>Siti</h3>
+				<p>
+					I enjoyed learning about tables and forms.
+					The mini project helped me improve my HTML skills.
+				</p>
+			</article>
+		</section>
+
+		<footer>
+			<p>Copyright &copy; 2026 CSF3133</p>
+		</footer>
+
+	</body>
+</html>
+
