@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>e-Ticket Your Campus Cinema</title>
+</head>
+
+<body>
+
+    <h1>e-Ticket Your Campus Cinema</h1>
+
+    <h2>Book Your Ticket</h2>
+
+    <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+    <form>
+
+        <p>Name:</p>
+        <input type="text">
+
+        <p>E-mail:</p>
+        <input type="email">
+
+        <p>Show date:</p>
+        <input type="date">
+
+        <p>Movie:</p>
+        <input list="movies">
+
+        <datalist id="Listmovies">
+            <option value="Movie 1">
+            <option value="Movie 2">
+            <option value="Movie 3">
+        </datalist>
+
+        <p>Adult tickets:</p>
+        <input type="number">
+
+        <p>Child tickets:</p>
+        <input type="number">
+
+        <p>Rate our service:</p>
+        <input type="range">
+
+        <p>Total tickets:</p>
+        <output></output>
+
+        <br><br>
+
+        <input type="submit" value="Book Ticket">
+
+    </form>
+	
+	<!-- Header Section -->
+    <header>
+        <h1>e-Ticket Your Campus Cinema</h1>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section>
+        <h2>Book Your Ticket</h2>
+
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+        <form oninput="
+            ticketTotal.value = Number(adult.value) + Number(child.value);
+            totalPrice.value = (Number(adult.value) * 12) + (Number(child.value) * 8);
+        ">
+
+            <!-- Customer Information -->
+            <p>Name:</p>
+            <input type="text" name="customerName" required>
+
+            <p>E-mail:</p>
+            <input type="email" name="email" required>
+
+            <!-- Phone Number -->
+            <p>Phone Number:</p>
+            <input type="tel" name="phone"
+                   placeholder="Enter phone number" required>
+
+            <!-- Show Date and Time -->
+            <p>Show date:</p>
+            <input type="date" name="showDate">
+
+            <p>Show time:</p>
+            <input type="time" name="showTime">
+
+            <!-- Movie Selection -->
+            <p>Movie:</p>
+            <input name="movie">
+
+            <datalist id="movies">
+                <option value="Inside Out 2">
+                <option value="The Wild Robot">
+                <option value="Moana 2">
+            </datalist>
+
+            <!-- Ticket Quantity -->
+            <p>Adult tickets (RM12):</p>
+            <input type="number" id="adult" name="adult"
+                   min="0" value="0">
+
+            <p>Child tickets (RM8):</p>
+            <input type="number" id="child" name="child"
+                   min="0" value="0">
+
+            <!-- Service Rating -->
+            <p>Rate our service:</p>
+            <input type="range" name="rating"
+                   min="1" max="5" step="1">
+
+            <!-- Total Ticket Calculation -->
+            <p>
+                Total tickets:
+                <output name="ticketTotal" for="adult child">0</output>
+            </p>
+
+            <!-- Total Price Calculation -->
+            <p>
+                Total price: RM
+                <output name="totalPrice" for="adult child">0</output>
+            </p>
+
+            <br>
+            <input type="submit" value="Book Ticket">
+
+        </form>
+    </section>
+
+    <!-- Now Showing Section -->
+    <section>
+        <h2>Now Showing</h2>
+
+        <ul>
+            <li>
+                <b>Inside Out 2</b> -
+                <span>PG</span> -
+            </li>
+
+            <li>
+                <b>The Wild Robot</b> -
+                <span>PG</span> -
+            </li>
+
+            <li>
+                <b>Moana 2</b> -
+                <span>PG</span> -
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 CineKampus. All rights reserved.</p>
+        <p>e-Ticket&reg; – Campus Cinema &lt; RM10 every Tuesday</p>
+    </footer>
+
+</body>
+</html>
