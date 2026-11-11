@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Requirement 10: CSS Comments explaining each section
+   ========================================================================== */
+
+/* Body & Base Container Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f9f9f9;
+}
+
+header {
+	background-color: #1A5276;
+	color: #ffffff;
+	text-align: center;
+	padding: 15px 0;
+}
+
+section {
+	padding: 20px;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* ==========================================================================
+   Requirement 5: Navigation Bar Styles (Moved to cafe.css)
+   ========================================================================== */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #1A5276;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	display: block;
+	color: #ffffff;
+	padding: 12px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* Hover state for navigation links */
+nav a:hover {
+	background-color: #E67E22;
+	color: #ffffff;
+}
+
+/* ==========================================================================
+   Requirement 6: Promotion Styling (.old-price)
+   ========================================================================== */
+.old-price {
+	text-decoration: line-through;
+	color: #888888;
+	margin-right: 8px;
+}
+
+.item {
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	padding: 15px;
+	margin-bottom: 12px;
+	border-radius: 5px;
+}
+
+/* ==========================================================================
+   Requirement 7: Responsive Video & Caption Styling
+   ========================================================================== */
+video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+figure {
+	margin: 0;
+	text-align: center;
+	background-color: #eaeaea;
+	padding: 10px;
+	border-radius: 6px;
+}
+
+figcaption {
+	font-style: italic;
+	font-size: 0.9rem;
+	color: #555555;
+	margin-top: 8px;
+}
+
+/* ==========================================================================
+   Requirement 8: Form Styling (.feedback-form)
+   ========================================================================== */
+.feedback-form {
+	background-color: #ffffff;
+	padding: 20px;
+	border: 2px solid #1A5276;
+	border-radius: 6px;
+	width: 90%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+	width: 95%;
+	padding: 8px;
+	margin-top: 4px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.feedback-form button {
+	background-color: #1A5276;
+	color: #ffffff;
+	padding: 10px 18px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.feedback-form button:hover {
+	background-color: #E67E22;
+}
+
+/* ==========================================================================
+   Requirement 9: Footer & Address Link Styling
+   ========================================================================== */
+footer {
+	background-color: #222222;
+	color: #ffffff;
+	text-align: center;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+footer a {
+	color: #FDEBD0;
+}
