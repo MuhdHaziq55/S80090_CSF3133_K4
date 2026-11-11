@@ -1,0 +1,172 @@
+/* ==========================================================================
+   1. General & Body Styles
+   ========================================================================== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #bed6ed;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+header {
+  background-color: #0f3456;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+/* ==========================================================================
+   2. Text Decoration Requirements (Requirement 5)
+   ========================================================================== */
+h1 {
+  text-decoration: overline;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #777;
+  margin-right: 8px;
+}
+
+.new-price {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   3. Navigation Bar (Requirement 2)
+   ========================================================================== */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* Removes bullets */
+  background-color: #194a78;
+  text-align: center; /* Center menu items */
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none; /* Removes underline */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+/* ==========================================================================
+   4. Interactive Link States (Requirement 6 - LVHA order)
+   ========================================================================== */
+nav a:link {
+  color: #ffffff;
+}
+
+nav a:visited {
+  color: #e0e0e0;
+}
+
+nav a:hover {
+  background-color: #555;
+  color: #ffd700;
+}
+
+nav a:active {
+  background-color: #111;
+  color: #ffffff;
+}
+
+/* Footer Link States */
+footer a:link { color: #a9d6ff; }
+footer a:visited { color: #cce5ff; }
+footer a:hover { color: #ffffff; text-decoration: underline; }
+footer a:active { color: #ffd700; }
+
+/* ==========================================================================
+   5. Section & Card Layout (ID Selectors: #destinations, #video, #trip, #contact)
+   ========================================================================== */
+#destinations, #video, #trip {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Class Selector 1: .card for articles */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+/* Class Selector 2: .center for aligned content */
+.center {
+  text-align: center;
+}
+
+.meter-box {
+  background-color: #e8f1f9;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+/* ==========================================================================
+   6. Video Responsive Styling (Requirement 3 & 8)
+   ========================================================================== */
+video {
+  max-width: 100%;
+  height: auto;
+  background-color: #000;
+}
+
+/* ==========================================================================
+   7. Form Styling (Requirement 7: .trip-form)
+   ========================================================================== */
+.trip-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid #194a78;
+  width: 90%; /* Percentage width for responsiveness */
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.trip-form input[type="text"],
+.trip-form input[type="email"] {
+  width: 95%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.trip-form button {
+  background-color: #194a78;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.trip-form button:hover {
+  background-color: #0f3456;
+}
+
+/* ==========================================================================
+   8. Footer Styling
+   ========================================================================== */
+#contact {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 30px;
+}
