@@ -1,0 +1,136 @@
+/* ---------- Page ----------
+   Roboto for body text, and paper.gif shown once at the top right */
+body {
+	margin: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	background-image: url("paper.gif");
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+/* ---------- Headings ----------
+   Merriweather is the second Google Font, used for headings */
+h1,
+h2 {
+	font-family: "Merriweather", Georgia, serif;
+}
+
+/* ---------- Paragraphs ----------
+   line-height makes the text easier to read */
+p {
+	line-height: 1.6;
+}
+
+/* ---------- Header ----------
+   Background image fills the header (cover), centred, shown once.
+   The background-color is a fallback so the white text stays readable
+   if the image file is missing. */
+header {
+	background-color: #1B4F72;
+	background-image: url("books.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	text-align: center;
+	padding: 60px 20px;
+}
+
+header h1 {
+	margin: 0 0 10px 0;
+}
+
+header p {
+	margin: 0;
+}
+
+/* ---------- Navigation bar ----------
+   Dark horizontal bar built from a list */
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333333;
+}
+
+/* Each list item floats left so the menu sits in one row */
+nav ul li {
+	float: left;
+}
+
+/* Links fill the whole item so the hover colour covers it */
+nav ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Hover effect for every link */
+nav ul li a:hover {
+	background-color: #111111;
+}
+
+/* Current page (Home) stays green */
+nav ul li a.active {
+	background-color: #04AA6D;
+}
+
+/* ---------- Main content ---------- */
+main {
+	padding: 20px;
+}
+
+/* ---------- Table ----------
+   Single borders and full width */
+#product {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+/* Shared cell style: thin border and spacing */
+#product th,
+#product td {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+/* Header row: green, white, uppercase, centred, 12px top and bottom */
+#product th {
+	background-color: #04AA6D;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+/* Price column (last column) aligned to the right */
+#product td:last-child {
+	text-align: right;
+}
+
+/* Grey even rows */
+#product tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+/* Hover effect on rows (written after the even rule so it wins) */
+#product tr:hover {
+	background-color: #ddd;
+}
+
+/* ---------- Footer ----------
+   Subtle background, centred text and padding */
+footer {
+	background-color: #f1f1f1;
+	text-align: center;
+	padding: 10px;
+}
+
+footer p {
+	margin: 0;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Campus Bookstore</title>
+		<!-- One link tag loads both fonts: Roboto (text) and Merriweather (headings) -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="shop.css">
+	</head>
+
+	<body>
+		<!--
+		PART 1: Line numbers refer to the ORIGINAL code given in the lab.
+
+		Error 1 (shop.html, Line 5): The closing title tag was written as <title> instead of </title>.
+		Error 2 (shop.html, Line 6): The Google Fonts link had no rel="stylesheet", so Roboto never loaded.
+		Error 3 (shop.html, Line 7): rel="stylesheets" is wrong; the correct value is rel="stylesheet".
+		Error 4 (shop.html, Lines 11-15): The <style> block was inside <body>; internal CSS belongs in <head>.
+		Error 5 (shop.html, Line 23): style="color=#1B4F72" used = instead of :, so the title was not blue.
+		Error 6 (shop.html, Lines 32-49): Data cells used <th> instead of <td>, so every cell got the green header style.
+		Error 7 (shop.html, Lines 18-20): The menu links (#home, #book, #contact) had no matching id on the page. Added id="home", id="book" and id="contact".
+		Error 8 (shop.css, Lines 1-2): The declarations (padding: 8px;) had no selector and no opening brace, so the rule was invalid. Added the selector #product th, #product td.
+		Error 9 (shop.css, Line 4): tr:hovered is not a real pseudo-class; the correct one is tr:hover.
+		Error 10 (shop.css, missing): font-family: Roboto was never applied to the page, so the linked font was unused.
+		Error 11 (shop.css, missing): No styles for the menu, so it was not a dark horizontal bar with a hover effect. Added ul, li (float: left) and a:hover rules.
+		Error 12 (shop.css, missing): No background image rule. Added paper.gif with no-repeat and top right position.
+		Error 13 (shop.css, missing): No border-collapse: collapse, so the table had double borders.
+		Error 14 (shop.css, missing): No tr:nth-child(even) rule for the grey even rows.
+		-->
+
+		<header id="home">
+			<h1>Campus Bookstore</h1>
+			<p>Textbook, stationery and more for every student.</p>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a class="active" href="#home">Home</a></li>
+				<li><a href="#book">Book</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<section id="book">
+				<table id="product">
+					<tr>
+						<th>Item</th>
+						<th>Category</th>
+						<th>Price (RM)</th>
+					</tr>
+					<tr>
+						<td>Web Design Basic</td>
+						<td>Textbook</td>
+						<td>45.00</td>
+					</tr>
+					<tr>
+						<td>A4 Notebook</td>
+						<td>Stationery</td>
+						<td>6.50</td>
+					</tr>
+					<tr>
+						<td>USB Drive 32GB</td>
+						<td>Gadget</td>
+						<td>25.00</td>
+					</tr>
+					<tr>
+						<td>Highlighter Set</td>
+						<td>Stationery</td>
+						<td>9.90</td>
+					</tr>
+				</table>
+			</section>
+		</main>
+
+		<footer id="contact">
+			<p>&copy; 2026 Campus Bookstore</p>
+		</footer>
+	</body>
+
+</html>
