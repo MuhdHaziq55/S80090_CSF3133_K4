@@ -1,0 +1,74 @@
+/* ---------- Page ---------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef0f3;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #1d5273;
+}
+
+/* ---------- Form card ---------- */
+form {
+    background-color: white;
+    border: 1px solid #d5dae3;
+    border-radius: 4px;
+    padding: 16px;
+    max-width: 320px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+/* ---------- Result text ---------- */
+#result, #checkedTime {
+    font-weight: bold;
+    margin: 4px 0;
+}
+
+/* ---------- Buttons with hover effect ---------- */
+button {
+    padding: 8px 14px;
+    background-color: #2a7ab0;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d5273;
+}
+
+/* ---------- Grade table: borders, padding, header background ---------- */
+#tableContainer {
+    margin-top: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #1d5273;
+    padding: 8px 24px;
+    text-align: center;
+}
+
+th {
+    background-color: #1d5273;
+    color: white;
+}

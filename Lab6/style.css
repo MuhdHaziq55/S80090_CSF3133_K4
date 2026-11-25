@@ -1,0 +1,87 @@
+/* ---------- Page ---------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef0f3;
+  margin: 0;
+  padding: 16px;
+  color: #222;
+}
+
+/* ---------- Header banner ---------- */
+header {
+  background: #1d5273;
+  color: white;
+  padding: 16px 20px;
+  max-width: 760px;
+  margin: 0 auto 12px;
+  border-radius: 4px;
+}
+header h1 { margin: 0 0 6px; font-size: 1.5rem; }
+header p  { margin: 0; font-size: 0.85rem; }
+
+/* ---------- White content boxes ---------- */
+section {
+  background: white;
+  max-width: 720px;
+  margin: 0 auto 12px;
+  padding: 14px 20px;
+  border-radius: 4px;
+}
+
+/* ---------- Buttons: padding, colour, pointer, hover ---------- */
+button {
+  padding: 8px 16px;
+  background-color: #2a7ab0;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+button:hover {
+  background-color: #1d5273;
+}
+
+/* ---------- Images: fixed size ---------- */
+img {
+  width: 120px;
+  height: 120px;
+}
+
+/* ---------- Choice images side by side ---------- */
+.arena {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 12px;
+  text-align: center;
+}
+.arena p { font-weight: bold; margin: 0 0 6px; font-size: 0.85rem; }
+.vs { font-weight: bold; color: #555; }
+
+/* ---------- Result message ---------- */
+#result { font-size: 1.2rem; font-weight: bold; min-height: 1.4em; }
+
+/* ---------- History table: collapse, borders, padding, header colour ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+th, td {
+  border: 1px solid #1d5273;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #1d5273;
+  color: white;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+}
